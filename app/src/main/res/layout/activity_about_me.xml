@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chads.lab1.AboutMeActivity">
+
+    <TextView
+        android:id="@+id/txt_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif"
+        android:text="About Me"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_author2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:text="Chad Sarrouf"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/txt_title2"
+        app:layout_constraintTop_toBottomOf="@+id/txt_title2" />
+
+    <TextView
+        android:id="@+id/txt_aboutMe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:fontFamily="@font/lato"
+        android:lineSpacingExtra="8sp"
+        android:text="I enjoy dogs, reading, and long walks on the beach. Sarcasm is okay too i suppose.\n\nCatch me on Club Penguin."
+        android:textAlignment="viewStart"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txt_title2"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="64dp"
+        android:layout_marginStart="28dp"
+        android:background="@android:color/holo_orange_dark"
+        android:text="back"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txt_aboutMe" />
+
+    <Button
+        android:id="@+id/btn_secret"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:background="@android:color/holo_orange_dark"
+        android:text="secret"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toEndOf="@+id/btn_back"
+        app:layout_constraintTop_toTopOf="@+id/btn_back" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="128dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/avatar" />
+</android.support.constraint.ConstraintLayout>

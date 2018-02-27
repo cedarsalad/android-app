@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_color_switcher"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chads.lab1.ColorSwitcherActivity">
+
+    <Button
+        android:id="@+id/btn_back2"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="64dp"
+        android:layout_marginStart="64dp"
+        android:background="@android:color/holo_orange_dark"
+        android:text="back"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rg1"
+        android:layout_width="532dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/gl1">
+
+        <RadioButton
+            android:id="@+id/rb_red"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:text="Red"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="@+id/gl1" />
+
+        <RadioButton
+            android:id="@+id/rb_yellow"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:text="Yellow"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="@+id/gl1" />
+
+        <RadioButton
+            android:id="@+id/rb_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:text="Blue"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toStartOf="@+id/rb_yellow"
+            app:layout_constraintStart_toEndOf="@+id/rb_red"
+            app:layout_constraintTop_toTopOf="@+id/gl1" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="128dp"
+        android:text="C O L O R"
+        android:textSize="100sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.46456692" />
+
+    <RadioGroup
+        android:id="@+id/rg2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/rg1"
+        app:layout_constraintStart_toStartOf="@+id/rg1"
+        app:layout_constraintTop_toBottomOf="@+id/rg1">
+
+        <RadioButton
+            android:id="@+id/rb_red2"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:fontFamily="serif-monospace"
+            android:text="Red"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            tools:layout_editor_absoluteY="552dp" />
+
+        <RadioButton
+            android:id="@+id/rb_yellow2"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:fontFamily="serif-monospace"
+            android:text="Yellow"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            tools:layout_editor_absoluteY="552dp" />
+
+        <RadioButton
+            android:id="@+id/rb_blue2"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:fontFamily="serif-monospace"
+            android:text="Blue"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toStartOf="@+id/rb_yellow2"
+            app:layout_constraintStart_toEndOf="@+id/rb_red2"
+            tools:layout_editor_absoluteY="553dp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="+"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/rg2"
+        app:layout_constraintEnd_toEndOf="@+id/rg1"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="@+id/rg1"
+        app:layout_constraintTop_toBottomOf="@+id/rg1" />
+
+</android.support.constraint.ConstraintLayout>
